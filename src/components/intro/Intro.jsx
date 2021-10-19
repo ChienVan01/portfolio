@@ -4,6 +4,10 @@ import Me from "../../img/me.png";
 const Container = styled.div`
   display: flex;
   height: 100vh;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 const ILeft = styled.div`
   flex: 1;
@@ -17,6 +21,14 @@ const LeftWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+
+  @media screen and (max-width: 480px) {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+  }
 `;
 const TextIntro = styled.h2`
   font-size: 30px;
@@ -58,6 +70,10 @@ const ITitleItem = styled.div`
 const IDesc = styled.p`
   margin: 0;
   padding: 0;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const IRight = styled.div`

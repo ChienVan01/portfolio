@@ -14,6 +14,11 @@ const Container = styled.div`
   &:hover ${Img} {
     transform: translateY(-100%);
   }
+
+  @media screen and (max-width: 480px) {
+    width: 40%;
+    height: 20vh;
+  }
 `;
 const Browser = styled.div`
   height: 20px;

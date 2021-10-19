@@ -8,9 +8,17 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  @media screen and (max-width: 480px) {
+    padding: 10px;
+  }
 `;
 const Text = styled.div`
   width: 65%;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 const Title = styled.h1`
   font-size: 50px;
@@ -18,6 +26,10 @@ const Title = styled.h1`
 `;
 const Desc = styled.p`
   margin: 20px 0;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 const List = styled.div`
   display: flex;

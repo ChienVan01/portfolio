@@ -5,6 +5,12 @@ const Container = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+  }
 `;
 const Left = styled.div`
   flex: 1;
@@ -13,6 +19,10 @@ const Left = styled.div`
   justify-content: center;
   position: relative;
   height: 100%;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 const Card = styled.div`
   width: 60%;
@@ -20,6 +30,10 @@ const Card = styled.div`
   border-radius: 30px;
   position: relative;
   overflow: hidden;
+
+  @media screen and (max-width: 480px) {
+    height: 30vh;
+  }
 `;
 const Bg = styled.div`
   width: 60%;
@@ -29,6 +43,10 @@ const Bg = styled.div`
   top: 50px;
   left: 50px;
   background-color: #333;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 const LImg = styled.img`
   width: 100%;
@@ -38,6 +56,10 @@ const LImg = styled.img`
 
 const Right = styled.div`
   flex: 1;
+
+  @media screen and (max-width: 480px) {
+    padding: 20px;
+  }
 `;
 const Title = styled.h1`
   font-weight: 400;
@@ -53,6 +75,10 @@ const Award = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 const RImg = styled.img`
   width: 120px;

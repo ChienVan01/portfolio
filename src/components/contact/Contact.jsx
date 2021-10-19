@@ -18,6 +18,11 @@ const Bg = styled.div`
 const Wrapper = styled.div`
   padding: 50px;
   display: flex;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    padding: 0 50px;
+  }
 `;
 const Left = styled.div`
   flex: 1;
@@ -25,6 +30,10 @@ const Left = styled.div`
 const Title = styled.h1`
   font-size: 60px;
   width: 80%;
+
+  @media screen and (max-width: 480px) {
+    font-size: 30px;
+  }
 `;
 const Info = styled.div``;
 const InfoItem = styled.div`
@@ -33,6 +42,11 @@ const InfoItem = styled.div`
   margin: 50px 0px;
   font-weight: 300;
   width: 70%;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    margin: 20px 0;
+  }
 `;
 
 const Span = styled.span`
@@ -47,9 +61,19 @@ const Right = styled.div`
 `;
 const Desc = styled.p`
   font-weight: 200;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 const From = styled.form`
   margin-top: 50px;
+
+  @media screen and (max-width: 480px) {
+    display: flex;
+    margin-top: 0px;
+    flex-wrap: wrap;
+  }
 `;
 const Input = styled.input`
   width: 50%;
@@ -59,6 +83,10 @@ const Input = styled.input`
   margin: 10px 0;
   font-size: 14px;
   padding-left: 10px;
+
+  @media screen and (max-width: 480px) {
+    width: 90%;
+  }
 `;
 const TextArea = styled.textarea`
   width: 100%;
