@@ -100,7 +100,7 @@ const About = () => {
       <Left>
         <Bg></Bg>
         <Card>
-          <LImg src="https://images.pexels.com/photos/3585047/pexels-photo-3585047.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+          <LImg src="https://github.com/ChienVan01/portfolio/blob/main/src/img/me.jpg?raw=true" />
         </Card>
       </Left>
       <Right>

@@ -2,20 +2,18 @@ import styled from "styled-components";
 
 const Img = styled.img`
   width: 100%;
+  height: 100px;
   transition: all 10s ease;
+  border-radius: 50%;
 `;
 const Container = styled.div`
-  width: 300px;
-  height: 35vh;
-  margin: 20px 10px;
-  border: 2px solid rgb(243, 242, 242);
+  width: 100px;
+  height: 150px;
+  margin: 40px 40px;
+  // border: 2px solid rgb(243, 242, 242);
   border-radius: 10px 10px 0px 0px;
   overflow: hidden;
   position: relative;
-  &:hover ${Img} {
-    transform: translateY(-10%);
-    transition: 2s;
-  }
 
   @media screen and (max-width: 480px) {
     width: 40%;
@@ -48,20 +46,14 @@ const Title = styled.div`
   text-align: center;
 `;
 
-const Product = ({ img, link, name }) => {
+const Skill = ({ img, link, name }) => {
   return (
     <Container>
-      <Browser>
-        <Circle></Circle>
-        <Circle></Circle>
-        <Circle></Circle>
-      </Browser>
-      <A href={link} target="_blank" rel="noreferrer">
-        <Img src={img} />
-      </A>
+      <Img src={img} />
+
       <Title>{name}</Title>
     </Container>
   );
 };
 
-export default Product;
+export default Skill;

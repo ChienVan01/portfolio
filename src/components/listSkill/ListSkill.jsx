@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Product from "../product/Product";
-import { products } from "../../Data";
+import { products, skill } from "../../Data";
+import Skill from "../skill/Skill";
 
 const Container = styled.div`
   padding: 50px 100px;
@@ -9,7 +10,7 @@ const Container = styled.div`
   align-items: center;
   text-align: center;
   justify-content: center;
-  @media screen and (max-width: 480px) {
+  j @media screen and (max-width: 480px) {
     padding: 10px;
   }
 `;
@@ -34,14 +35,14 @@ const Desc = styled.p`
 const List = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
 `;
 
-const ProductList = () => {
+const ListSkill = () => {
   return (
     <Container>
       <Text>
-        <Title>My Project</Title>
+        <Title>Skill</Title>
         {/* <Desc>
           Chien is a creative portfolio that your work has been waiting for.
           Beautiful homes, stunning portfolio styles & a whole lot more awaits
@@ -49,17 +50,12 @@ const ProductList = () => {
         </Desc> */}
       </Text>
       <List>
-        {products.map((item) => (
-          <Product
-            key={item.id}
-            img={item.img}
-            link={item.link}
-            name={item.name}
-          />
+        {skill.map((item) => (
+          <Skill key={item.id} img={item.img} name={item.name} />
         ))}
       </List>
     </Container>
   );
 };
 
-export default ProductList;
+export default ListSkill;

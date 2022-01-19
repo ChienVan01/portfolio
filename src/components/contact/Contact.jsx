@@ -177,7 +177,10 @@ const Contact = () => {
           </Desc>
           <From ref={formRef} onSubmit={handleSubmit}>
             <Input
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode && "#fff",
+              }}
               type="text"
               placeholder="Name"
               name="user_name"
@@ -185,7 +188,10 @@ const Contact = () => {
               onChange={onTextInputChange}
             ></Input>
             <Input
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode && "#fff",
+              }}
               type="text"
               placeholder="Subject"
               name="user_subject"
@@ -193,7 +199,10 @@ const Contact = () => {
               onChange={onTextInputChange}
             ></Input>
             <Input
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode && "#fff",
+              }}
               type="text"
               placeholder="Email"
               name="user_email"
@@ -201,7 +210,10 @@ const Contact = () => {
               onChange={onTextInputChange}
             ></Input>
             <TextArea
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode && "#fff",
+              }}
               rows="5"
               placeholder="Message"
               name="user_message"
